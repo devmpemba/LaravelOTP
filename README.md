@@ -3,4 +3,4 @@ Sample Implementation of Laravel OTP Integration using otp-library. You can inst
 
 ````
 composer require salimmbise/otp-library
-```
+
