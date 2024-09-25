@@ -9,6 +9,9 @@ class Otp extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['email', 'otp', 'expires_at', 'is_verified'];
+    protected $fillable = ['email', 'otp', 'expires_at'];
+
+    public $timestamps = true;
+
 
 }

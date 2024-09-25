@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('otps', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('otps', function (Blueprint $table) {
+            $table->boolean('verified')->default(false);
+
         });
     }
 
@@ -22,6 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('otps');
+        Schema::table('otps', function (Blueprint $table) {
+            //
+        });
     }
 };
